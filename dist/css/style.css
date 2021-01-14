@@ -1,0 +1,36 @@
+@import "fonts.css";
+
+* {box-sizing: border-box}
+
+/* Design system */
+:root {
+    /* Fonts */
+    --small-font: 10px;
+    --normal-font: 16px;
+    --large-1-font: 26px;
+    --large-2-font: 42px;
+    --large-3-font: 68px;
+    --large-4-font: 110px;
+
+    /* Colors */
+    --lightest-primary: hsl(0, 87%, 90%);
+    --lighter-primary: hsl(0, 87%, 70%);
+    --primary: hsl(0, 87%, 60%);
+    --darker-primary: hsl(0, 100%, 40%);
+    --darkest-primary: hsl(0, 100%, 30%);
+
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 12%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'a Asian Ninja', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: var(--large-2-font);
+}

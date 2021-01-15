@@ -4,13 +4,17 @@
 
 /* Design system */
 :root {
-    /* Fonts */
+    /* Font */
     --small-font: 10px;
     --normal-font: 16px;
     --large-1-font: 26px;
     --large-2-font: 42px;
     --large-3-font: 68px;
     --large-4-font: 110px;
+
+    --logo-font: 'a Asian Ninja', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --header-font: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    --base-font: 'Merriweather', Arial, Helvetica, sans-serif;
 
     /* Colors */
     --lightest-primary: hsl(0, 87%, 90%);
@@ -19,6 +23,9 @@
     --darker-primary: hsl(0, 100%, 40%);
     --darkest-primary: hsl(0, 100%, 30%);
 
+    --dark-black: hsl(0, 2%, 5%);
+    --base-black: hsl(0, 2%, 10%);
+    --light-black: hsl(0, 2%, 20%);
 }
 
 #header {
@@ -26,13 +33,37 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 3em;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu {
+    grid-column: 1;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    font-family: 'a Asian Ninja', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: var(--large-2-font);
+    justify-content: flex-start;
+    font-family: var(--header-font);
+    font-size: var(--large-1-font);
+}
+
+.menu a {
+    padding: 0 1em 0 1em;
+    color: var(--light-black);
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.menu a:hover {
+    color: var(--darkest-primary);
+}
+
+.header-container {
+    grid-column: 2;
+    color: var(--base-black);
 }
 
 .header-background-circle {
@@ -53,4 +84,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--logo-font);
+    font-size: var(--large-2-font);
 }

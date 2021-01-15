@@ -2,6 +2,10 @@
 
 * {box-sizing: border-box}
 
+body {
+    background-color: hsl(0, 10%, 95%);
+}
+
 /* Design system */
 :root {
     /* Font */
@@ -23,6 +27,12 @@
     --darker-primary: hsl(0, 100%, 40%);
     --darkest-primary: hsl(0, 100%, 30%);
 
+    --lighest-secondary: hsl(56, 30%, 92%);
+    --lighter-secondary: hsl(56, 30%, 822%);
+    --secondary: hsl(56, 30%, 72%);
+    --darker-secondary: hsl(56, 30%, 52%);
+    --darkest-secondary: hsl(56, 30%, 42%);
+
     --dark-black: hsl(0, 2%, 5%);
     --base-black: hsl(0, 2%, 10%);
     --light-black: hsl(0, 2%, 20%);
@@ -31,7 +41,7 @@
 #header {
     width: 100%;
     position: fixed;
-    top: 0;
+    top: 1%;
     left: 0;
     display: grid;
     grid-template-columns: 30% auto 30%;
@@ -58,7 +68,7 @@
 }
 
 .menu a:hover {
-    color: var(--darkest-primary);
+    color: var(--darkest-secondary);
 }
 
 .header-container {

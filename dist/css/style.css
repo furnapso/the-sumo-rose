@@ -107,7 +107,7 @@ main {
 
 #content {
     width: 100%;
-    overflow: scroll;
+    overflow: auto;
     max-height: 80vh;
     display: flex;
     justify-content: center;

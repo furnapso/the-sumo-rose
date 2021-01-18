@@ -117,3 +117,13 @@ main {
 .content-container {
     width: 45%;
 }
+
+.float-right {
+    float: right;
+    clear: right;
+}
+
+.float-left {
+    float: left;
+    clear: left;
+}

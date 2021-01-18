@@ -118,6 +118,11 @@ main {
     width: 45%;
 }
 
+.content-container img {
+    max-height: 400px;
+    padding: 10px;
+}
+
 .float-right {
     float: right;
     clear: right;

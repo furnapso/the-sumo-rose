@@ -40,9 +40,6 @@ body {
 
 #header {
     width: 100%;
-    position: fixed;
-    top: 1%;
-    left: 0;
     display: grid;
     grid-template-columns: 30% auto 30%;
     justify-content: space-between;
@@ -98,4 +95,34 @@ body {
     align-items: center;
     font-family: var(--logo-font);
     font-size: var(--large-2-font);
+}
+
+/* MAIN CONTENT */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+
+#content {
+    width: 100%;
+    overflow: scroll;
+    max-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-container .left {
+    grid-column: 1;
+}
+
+.content-container .right {
+    grid-column: 2;
 }

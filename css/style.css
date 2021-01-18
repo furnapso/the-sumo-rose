@@ -57,7 +57,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: var(--header-font);
     font-size: var(--large-1-font);
 }

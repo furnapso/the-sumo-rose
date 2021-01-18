@@ -111,18 +111,9 @@ main {
     max-height: 80vh;
     display: flex;
     justify-content: center;
+    font-family: var(--base-font);
 }
 
 .content-container {
-    width: 60%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.content-container .left {
-    grid-column: 1;
-}
-
-.content-container .right {
-    grid-column: 2;
+    width: 45%;
 }

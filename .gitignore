@@ -104,5 +104,3 @@ typings/
 
 # Custom
 .vscode/settings.json
-dist/*
-!dist/main.js

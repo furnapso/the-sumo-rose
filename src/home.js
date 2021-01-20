@@ -1,4 +1,4 @@
-export const home = (contentDiv) => {
+const homePage = (contentDiv) => {
     contentDiv.innerHTML = `
     <div class="content-container">
                 <img class="float-right" src="images/bowl.jpg">
@@ -34,3 +34,5 @@ export const home = (contentDiv) => {
                     </p>
             </div>`
 }
+
+export default homePage

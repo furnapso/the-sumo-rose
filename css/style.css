@@ -137,3 +137,47 @@ main {
     float: left;
     clear: left;
 }
+
+.two-column-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-1 {
+    grid-column: 1;
+}
+
+.col-2 {
+    grid-column: 2;
+}
+
+#content form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#content form input, #content form button {
+    margin: 10px 0 10px 0;
+    font-family: var(--base-font);
+    border: 2px solid var(--secondary);
+    border-radius: 2px;
+    padding: 8px 10px 8px 10px;
+    transition: 200ms all;
+    background-color: hsl(0, 2%, 95%);
+    color: var(--light-black);
+}
+
+#content form input:focus, #content form button:focus {
+    border: 2px solid var(--darkest-secondary);
+    outline: none;
+    background-color: white;
+}
+
+#content form input::placeholder {
+    color: var(--light-black);
+}
+
+#content form button {
+    color: var(--light-black);
+}

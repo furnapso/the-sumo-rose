@@ -114,6 +114,11 @@ main {
     font-family: var(--base-font);
 }
 
+#content h1 {
+    font-family: var(--large-1-font);
+    font-weight: normal;
+}
+
 .content-container {
     width: 45%;
 }

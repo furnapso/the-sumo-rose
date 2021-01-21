@@ -1,5 +1,8 @@
 const contact = (contentDiv) => {
-    contentDiv.innerHTML = `
+    contentDiv.style.opacity = 0;
+
+    setTimeout(() => {
+        contentDiv.innerHTML = `
     <div class="content-container">
                 <div class="two-column-container">
                     <div class="col-1">
@@ -22,6 +25,8 @@ const contact = (contentDiv) => {
                 </div>
             </div>
     `
+    contentDiv.style.opacity = 1;
+    }, 400);
 }
 
 export default contact

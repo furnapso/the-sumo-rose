@@ -112,6 +112,7 @@ main {
     display: flex;
     justify-content: center;
     font-family: var(--base-font);
+    transition: opacity 200ms;
 }
 
 #content h1 {

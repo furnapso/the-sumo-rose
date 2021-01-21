@@ -1,5 +1,8 @@
 const homePage = (contentDiv) => {
-    contentDiv.innerHTML = `
+    contentDiv.style.opacity = 0;
+
+    setTimeout(() => {
+        contentDiv.innerHTML = `
     <div class="content-container">
                 <img class="float-right" src="images/bowl.jpg">
                     <p>
@@ -33,6 +36,9 @@ const homePage = (contentDiv) => {
                         first Tuesday of each month.
                     </p>
             </div>`
+
+    contentDiv.style.opacity = 1
+    }, 400);
 }
 
 export default homePage

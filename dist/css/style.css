@@ -64,10 +64,15 @@ body {
     color: var(--light-black);
     text-decoration: none;
     transition: color 200ms;
+    transition: border 200ms;
 }
 
 .menu a:hover {
     color: var(--darkest-secondary);
+}
+
+.menu .active {
+    border-bottom: 3px solid var(--darkest-secondary);
 }
 
 .header-container {
